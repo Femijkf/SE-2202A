@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Events</title>
+        <script>
+            function checkUsername(e) {
+                var target = e.target;
+                console.log(target.id)
+            }
+
+            function addeventtothetext() {
+                var el = document.getElementById(username);
+                el.addEventListener("blur", username, false);
+            }
+        </script>
+    </head>
+    <body>
+        Username: <input type="text" name="" id="username"><br>
+        Password: <input type="password" id="password"><br>
+        <input type="button" onclick="addeventtothetext()">Add</input>
+    </body>
+</html>

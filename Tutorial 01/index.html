@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+         <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-text">
+            <h1>I am Femi Odujinrin</h1>
+            <p>A Software Engineering Student</p>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </header>
+
+    <!-- About Section with Image -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="pfp.jpg" alt="Femi's Photo" class="about-image">
+            <div class="about-text">
+                <p>
+                    Hi, I’m Femi, a dedicated software engineering student at Western University. 
+                    I enjoy developing creative solutions to complex problems and have experience working with APIs 
+                    and building automation tools. My current focus is on enhancing user experience through efficient 
+                    coding practices. Outside of my studies, I love experimenting with new technologies, 
+                    contributing to open-source projects, and continuously improving my programming skills.
+                </p><br><br>
+                <p>
+                    I am currently enrolled at The University of Western Ontario (Western University) and I am working
+                    toward a B.E.Sc in Software Engineering. My goal is to use my skills and this degree to create
+                    something meaningful and impactful in the world. A concept that can make a difference somewhere.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work" class="work-section">
+        <h2>Work Experience</h2>
+        <div class="work-cards">
+            <div class="card">
+                <img src="voltus.png" alt="Voltus">
+                <h3>Voltus Inc.</h3>
+                <p>Lead Generation Intern</p>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+            <div class="card">
+                <img src="french.png" alt="The French Tutor">
+                <h3>The French Tutor Inc.</h3>
+                <p>Sales Management Associate</p>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+            <div class="card">
+                <img src="phaners.png" alt="Phaners">
+                <h3>Phaners</h3>
+                <p>Outbound Sales Specialist</p>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Send me a message:</p>
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made by Femi Odujinrin.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+Write a funciton called duplicaetNumbers that fufills the following requirements:
+
+1. Input:
+    - An Array of intergers numbers
+
+2. Output:
+    - An object where:
+        - Each property id an intergetr that appears more than once in the array
+        - The value of each property is the count of how many times the integer appears
+
+3. Rules
+    - The integers are treated as-is (positive, negative or zero)
+    - If no integers are repeated, the function should retun an empty object
+
+Example 1:
+    duplicaetNumbers([1, 2, 3, 2, 4, 3, 5, 3, 3]);
+
+Output:
+    {2: 2, 3: 4}

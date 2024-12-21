@@ -1,0 +1,34 @@
++---------------------
+| Animal
++--------------------
+| + name
+| - internalId
++---------------------
+| + sleep()
+| + getInteralId()
+| + setInternalId(id)
+| + makeSound()
+| + eat()
++---------------------
+
+
++----------------
+| Dog
++----------------
+| + breed
++----------------
+| + makeSound()
+| + fetch()
++----------------
+
+
++----------------
+| Cat
+-----------------
+| + furColor
+-----------------
+| + makeSound()
+| + scratch()
++----------------
+
+//Override is part of polymorphism

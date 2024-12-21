@@ -1,0 +1,51 @@
+You are given an array of employee objects. Each employee object is structtures as follows:
+{
+    name: string,
+    department: string,
+    salary: number,
+    yearsOfExperiecnce: number
+}
+
+Your task is to implement a function called calculatedAverageSaalry that performs the fooloeoiwing
+
+1 Takes two inputs:
+    - An array of employee
+
+
+Example:
+    const employee = [
+        {name: 'Alice, department: 'Engineering', salary: 90000, yearsOfExperiecnce: 0},
+        {name: 'Alice, department: 'Engineering', salary: 90000, yearsOfExperiecnce: 0},
+        {name: 'Alice, department: 'Engineering', salary: 90000, yearsOfExperiecnce: 0},
+        {name: 'Alice, department: 'Engineering', salary: 90000, yearsOfExperiecnce: 0}
+
+
+    ]
+
+    ------------------------------------------------------------------------------------------------------------------------------
+
+function calculatedAverageSaalry(employees, department) {
+    // Step 1: Filter employees by department and years of experience
+    const filteredEmployees = employees.filter(employee =>
+        employee.department == department && employee.yearsOfExperiecnce > 5
+    );
+
+    // Step 2: Calculate the total salary using reduce
+    let totalSalary = filteredEmployees.reduce((sum, employee) => sum + employee.salary, 0);
+        //totalSalary = filteredEmployees.reduce(function(sum, employee)) {
+            //                              return sum + employee.salary;
+       // }, 0;
+
+
+//Step 3: Calaculate and return the average salary
+        if (filteredEmployees.length == 0) {
+            retun 0;
+        }
+
+        else {
+            retun totalSalary / filteredEmployees.length;
+        }
+}
+        const employees = [
+            
+        ]
